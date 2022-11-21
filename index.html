@@ -12,7 +12,7 @@
 
       axios.get(MYSERVER).then((response) => {
         show.innerHTML = response.data
-          .map((student) => `<div><li> ${student.age} ,${student.name}</li> </div>`)
+          .map((ar) => `<div><li> ${ar.age} ,${ar.name}</li> </div>`)
           .join("");
       });
     </script>
