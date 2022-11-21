@@ -1,3 +1,4 @@
+{% block navbar %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,16 +19,7 @@
         <li class="nav-item">
           <a class="nav-link" href="data2.html">Ages</a>
         </li>
-      </ul>
-    <div id="show"></div>
-    <script>
-      const MYSERVER = "https://renderex2.onrender.com/";
-
-      axios.get(MYSERVER).then((response) => {
-        show.innerHTML = response.data
-          .map((waw) => `<div><li> ${waw.age} ,${waw.name}</li> </div>`)
-          .join("");
-      });
-    </script>
-  </body>
+      </ul>  
+</body>
 </html>
+{% endblock navbar %}
