@@ -1,8 +1,9 @@
 
 {% extends 'index.html' %}
-{% block navbar %}{% endblock navbar %}
+{% block head %}{% endblock %}
 
 <body>
+    {% block names %}
     <div id="show"></div>
     <script>
       const MYSERVER = "https://renderex2.onrender.com/";
@@ -13,5 +14,6 @@
           .join("");
       });
     </script>
+    {% endblock %}
   </body>
 </html>
