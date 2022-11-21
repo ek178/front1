@@ -11,8 +11,8 @@
     <script>
       const MYSERVER = "https://renderex2.onrender.com/";
 
-      axios.get(MYSERVER).then((response) => {
-        show.innerHTML = response.data
+      axios.get(MYSERVER).then((res) => {
+        show.innerHTML = res.data
           .map((waw) => `<div><li>${waw.name}</li><br><br></div>`)
           .join("");
       });
