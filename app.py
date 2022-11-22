@@ -7,11 +7,11 @@ api = Flask(__name__)
 def hello():
     return render_template ("index.html")
  
-@api.route('/data1.html')
+@api.route('/data1')
 def name():
     return render_template ("data1.html")
 
-@api.route('/data2.html')
+@api.route('/data2')
 def age():
     return render_template ("data2.html")
 
