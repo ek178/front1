@@ -1,8 +1,7 @@
 
-{% extends 'index.html' %}
+{% extends 'templates/index.html' %}
 
-<body>
-    {% block names %}
+{% block content %}
     <div id="show"></div>
     <script>
       const MYSERVER = "https://renderex2.onrender.com/";
@@ -13,6 +12,4 @@
           .join("");
       });
     </script>
-    {% endblock %}
-  </body>
-</html>
+{% endblock %}
