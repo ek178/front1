@@ -1,19 +1,19 @@
 
 {% extends "index.html" %}
-
-{% block head %}
-{{ super() }}
-{% endblock %}
-
 {% block content %}
+
     <div id="show"></div>
+    <br>
     <script>
       const MYSERVER = "https://renderex2.onrender.com/";
 
       axios.get(MYSERVER).then((res) => {
         show.innerHTML = res.data
-          .map((waw) => `<div><li>${waw.name}</li><br><br></div>`)
+          .map((waw) => `<div><li>${waw.age}</li><br><br></div>`)
           .join("");
       });
     </script>
-{% endblock %}
+    {% endblock %}
+    {% block head %}
+    {{ super() }}
+    {% endblock %}
