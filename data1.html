@@ -1,6 +1,10 @@
 
 {% extends "index.html" %}
 
+{% block head %}
+{{ super() }}
+{% endblock %}
+
 {% block content %}
     <div id="show"></div>
     <script>
@@ -12,4 +16,4 @@
           .join("");
       });
     </script>
-{% endblock content %}
+{% endblock %}
