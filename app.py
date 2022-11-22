@@ -5,7 +5,7 @@ api = Flask(__name__)
  
 @api.route('/')
 def hello():
-    return ("index.html")
+    return render_template ("index.html")
  
 @api.route('/data1')
 def name():
