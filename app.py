@@ -5,15 +5,15 @@ api = Flask(__name__)
  
 @api.route('/')
 def hello():
-    return render_template ("index.html")
+    return render ("index.html")
 
 @api.route('/data1.html')
 def name():
-    return render_template ("data1.html")
+    return render ("data1.html")
 
 @api.route('/data2.html')
 def age():
-    return render_template ("data2.html")
+    return render ("data2.html")
 
 
 if __name__ == '__main__':
