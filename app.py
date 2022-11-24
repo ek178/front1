@@ -1,8 +1,8 @@
-from flask import Flask
+import flask
 import jinja_partials
 from views import home
 
-api = Flask(__name__)
+api = flask.Flask(__name__)
 api.register_blueprint(home.blueprint)
 jinja_partials.register_extensions(api)
 
