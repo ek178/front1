@@ -1,8 +1,11 @@
 from flask import Flask,render_template
+import jinja_partials
 
 
 api = Flask(__name__)
- 
+
+jinja_partials.register_extensions(api)
+
 @api.route('/')
 def hello():
     return render_template ("index.html")
