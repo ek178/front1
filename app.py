@@ -8,7 +8,7 @@ jinja_partials.register_extensions(api)
 
 @api.route('/')
 def hello():
-    return render_template ("index.html")
+    return render_template ("templates/index.html")
  
 @api.route('/data1')
 def name():
