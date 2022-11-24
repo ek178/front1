@@ -1,13 +1,14 @@
 from flask import Flask,render_template
 import jinja_partials
 
-
 api = Flask(__name__)
 
 jinja_partials.register_extensions(api)
 
+
+
 @api.route('/')
-def hello():
+def index():
     return render_template ("templates/index.html")
  
 @api.route('/data1')
